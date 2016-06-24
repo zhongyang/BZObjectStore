@@ -298,7 +298,7 @@
     }
     int changes = [db changes];
     if (changes > 0) {
-        sqlite_int64 lastInsertRowid = [db lastInsertRowId];
+        long long int lastInsertRowid = [db lastInsertRowId];
         object.rowid = [NSNumber numberWithLongLong:lastInsertRowid];
     }
     return YES;
@@ -329,7 +329,7 @@
     }
     int changes = [db changes];
     if (changes > 0) {
-        sqlite_int64 lastInsertRowid = [db lastInsertRowId];
+        long long int lastInsertRowid = [db lastInsertRowId];
         object.rowid = [NSNumber numberWithLongLong:lastInsertRowid];
     }
     return YES;
